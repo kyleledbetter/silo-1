@@ -1,0 +1,68 @@
+//
+// Layout
+// --------------------------------------------------
+
+.panel {
+	position: fixed;
+	bottom: 10px;
+	top: 20px;
+
+	&> .panel-body,
+	&> .list-group {
+		overflow-x: hidden;
+		overflow-y: auto;
+		height: 90%;
+	}
+
+	&> .panel-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.in {
+	&> .btn-group-vertical {
+		display: block;
+
+		&> .btn:first-child:not(:last-child) {
+			border-top-right-radius: 0;
+			border-top-left-radius: 0;
+		}
+		&> .btn:last-child:not(:first-child) {
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+}
+
+/* iCheck */
+[class*="icheckbox"] {
+	float: left;
+	margin-right: 10px;
+}
+
+@media (min-width: @screen-tablet) {
+	.panels-3 {
+		.panel {
+			width: 28%;
+		}
+		.panel-1 {
+			left: 5%;
+		}
+		.panel-2 {
+			left: 35%;
+		}
+		.panel-3 {
+			left: 65%;
+		}
+	}
+}
+
+@media (min-width: @screen-desktop) {
+
+}
+
+@media (min-width: @screen-lg-desktop) {
+
+}
