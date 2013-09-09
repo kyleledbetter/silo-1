@@ -18,494 +18,350 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<script src="assets/js/modernizr.custom.js"></script>
 </head>
 <body>
-	<div class="panels-3">
-		<!-- begin silo -->
-		<div class="collapse collapse-column-1 in">
-			<div class="panel panel-info panel-1">
-				<div class="panel-heading text-center">
-					<div class="dropdown pull-right">
-						<a data-toggle="collapse" href=".collapse-menu-1"><span class="icon-reorder"></span></a>
-					</div>
-					<div class="btn-group pull-left">
-						<a data-toggle="collapse" href=".collapse-column-1" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
-						<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
-						<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
-					</div>
-					Chat One
+	<div id="vs-container" class="vs-container">
+		<header class="vs-header">
+			<ul class="vs-nav">
+				<li><a href="#section-1"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="64"></a></li>
+				<li><a href="#section-2"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="64"></a></li>
+				<li><a href="#section-3"><img class="img-circle" src="assets/images/avatars/gob_128.jpg" alt="..." width="64"></a></li>
+				<li><a href="#section-4"><img class="img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="64"></a></li>
+				<li><a href="#section-5"><img class="img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="64"></a></li>
+			</ul>
+		</header>
+		<div class="vs-wrapper">
+			<section id="section-1">
+				<div class="vs-content">
+					<!-- begin col -->
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<div class="dropdown pull-right">
+									<a data-toggle="collapse" href=".collapse-menu-1"><span class="icon-reorder"></span></a>
+								</div>
+								<div class="btn-group pull-left">
+									<a data-toggle="collapse" href=".collapse-column-1" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+								</div>
+								Tasks and Notes
+							</div>
+							<div class="collapse-menu-1 collapse fade">
+								<div class="btn-group-vertical">
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
+								</div>
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<input type="search" class="form-control" placeholder="search" />
+								</div>
+								<div class="list-group-item">
+									<div class="media">
+										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="media">
+										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" /> 
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<p>This item is a task item created with #task</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="media">
+										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<div class="pull-left">
+											<div class="btn btn-xs btn-danger active">
+												<div class="h6">
+												SEP
+												</div>
+												<div class="btn btn-xs btn-default active">
+												08
+												</div>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<p>This item is an event, and was created with the #event tag.</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="media">
+										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="media">
+										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" /> 
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<p>This item is a task item created with #task</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<div class="media">
+										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<div class="pull-left">
+											<div class="btn btn-xs btn-danger active">
+												<div class="h6">
+												SEP
+												</div>
+												<div class="btn btn-xs btn-default active">
+												08
+												</div>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<p>This item is an event, and was created with the #event tag.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
+									</a>
+									<div class="media-body">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end col -->
 				</div>
-				<div class="collapse-menu-1 collapse fade">
-					<div class="btn-group-vertical">
-						<a href="#" class="btn btn-info"><span aria-hidden="true" class="icon-file"></span> Files</a>
-						<a href="#" class="btn btn-info"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
-						<a href="#" class="btn btn-info"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
-						<a href="#" class="btn btn-info"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
+			</section>
+			<section id="section-2">
+				<div class="vs-content">
+					<div class="">
+						<!-- begin col -->
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<div class="dropdown pull-right">
+									<a data-toggle="collapse" href=".collapse-menu-2"><span class="icon-reorder"></span></a>
+								</div>
+								<div class="btn-group pull-left">
+									<a data-toggle="collapse" href=".collapse-column-2" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+								</div>
+								The Bluths
+							</div>
+							<div class="collapse-menu-2 collapse fade">
+								<div class="btn-group-vertical">
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
+								</div>
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<input type="search" class="form-control" placeholder="search" />
+								</div>
+								
+							</div>
+							<div class="panel-footer">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
+									</a>
+									<div class="media-body">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end col -->
 					</div>
 				</div>
-				<div class="list-group">
-					<div class="list-group-item">
-						<input type="search" class="form-control" placeholder="search" />
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
+			</section>
+			<section id="section-3">
+				<div class="vs-content">
+					<div class="">
+						<!-- begin col -->
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<div class="dropdown pull-right">
+									<a data-toggle="collapse" href=".collapse-menu-3"><span class="icon-reorder"></span></a>
+								</div>
+								<div class="btn-group pull-left">
+									<a data-toggle="collapse" href=".collapse-column-3" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+								</div>
+								Gob
+							</div>
+							<div class="collapse-menu-3 collapse fade">
+								<div class="btn-group-vertical">
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
+								</div>
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<input type="search" class="form-control" placeholder="search" />
+								</div>
+								
+							</div>
+							<div class="panel-footer">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
+									</a>
+									<div class="media-body">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>I'll be in the hospital bar</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>You know there isn't a hospital bar, Mother</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>Well, this is why people hate hospitals</p>
-							</div>
-						</div>
+						<!-- end col -->
 					</div>
 				</div>
-				<div class="panel-footer">
-					<div class="media">
-						<a class="pull-left" href="#">
-							<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
-						</a>
-						<div class="media-body">
-							<textarea class="form-control"></textarea>
+			</section>
+			<section id="section-4">
+				<div class="vs-content">
+					<div class="">
+						<!-- begin col -->
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<div class="dropdown pull-right">
+									<a data-toggle="collapse" href=".collapse-menu-4"><span class="icon-reorder"></span></a>
+								</div>
+								<div class="btn-group pull-left">
+									<a data-toggle="collapse" href=".collapse-column-4" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+								</div>
+								Tobias, Lindsay
+							</div>
+							<div class="collapse-menu-4 collapse fade">
+								<div class="btn-group-vertical">
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
+								</div>
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<input type="search" class="form-control" placeholder="search" />
+								</div>
+								
+							</div>
+							<div class="panel-footer">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
+									</a>
+									<div class="media-body">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
 						</div>
+						<!-- end col -->
 					</div>
 				</div>
-			</div>
+			</section>
+			<section id="section-5">
+				<div class="vs-content">
+					<div class="">
+						<!-- begin col -->
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<div class="dropdown pull-right">
+									<a data-toggle="collapse" href=".collapse-menu-5"><span class="icon-reorder"></span></a>
+								</div>
+								<div class="btn-group pull-left">
+									<a data-toggle="collapse" href=".collapse-column-5" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+									<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+								</div>
+								George-Michael
+							</div>
+							<div class="collapse-menu-5 collapse fade">
+								<div class="btn-group-vertical">
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
+								</div>
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<input type="search" class="form-control" placeholder="search" />
+								</div>
+								
+							</div>
+							<div class="panel-footer">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
+									</a>
+									<div class="media-body">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end col -->
+					</div>
+				</div>
+			</section>
 		</div>
-		<!-- end silo -->
-		<!-- begin silo -->
-		<div class="collapse collapse-column-2 in">
-			<div class="panel panel-danger panel-2">
-				<div class="panel-heading text-center">
-					<div class="dropdown pull-right">
-						<a data-toggle="collapse" href=".collapse-menu-2" class="text-danger"><span class="icon-reorder"></span></a>
-					</div>
-					<div class="btn-group pull-left">
-						<a data-toggle="collapse" href=".collapse-column-2" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
-						<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
-						<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
-					</div>
-					Chat Two
-				</div>
-				<div class="collapse-menu-2 collapse fade">
-					<div class="btn-group-vertical">
-						<a href="#" class="btn btn-danger"><span aria-hidden="true" class="icon-file"></span> Files</a>
-						<a href="#" class="btn btn-danger"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
-						<a href="#" class="btn btn-danger"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
-						<a href="#" class="btn btn-danger"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
-					</div>
-				</div>
-				<div class="list-group">
-					<div class="list-group-item">
-						<input type="search" class="form-control" placeholder="search" />
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<input type="checkbox" class="pull-left" />
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>I'll be in the hospital bar</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>You know there isn't a hospital bar, Mother</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>Well, this is why people hate hospitals</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>I'll be in the hospital bar</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel-footer">
-					<div class="media">
-						<a class="pull-left" href="#">
-							<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
-						</a>
-						<div class="media-body">
-							<textarea class="form-control"></textarea>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end silo -->
-		<!-- begin silo -->
-		<div class="collapse collapse-column-3 in">
-			<div class="panel panel-success panel-3">
-				<div class="panel-heading text-center">
-					<div class="dropdown pull-right">
-						<a data-toggle="collapse" href=".collapse-menu-3" class="text-success"><span class="icon-reorder"></span></a>
-					</div>
-					<div class="btn-group pull-left">
-						<a data-toggle="collapse" href=".collapse-column-3" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
-						<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
-						<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
-					</div>
-					Chat Three
-				</div>
-				<div class="collapse-menu-3 collapse fade">
-					<div class="btn-group-vertical">
-						<a href="#" class="btn btn-success"><span aria-hidden="true" class="icon-file"></span> Files</a>
-						<a href="#" class="btn btn-success"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
-						<a href="#" class="btn btn-success"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
-						<a href="#" class="btn btn-success"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
-					</div>
-				</div>
-				<div class="list-group">
-					<div class="list-group-item">
-						<input type="search" class="form-control" placeholder="search" />
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/gob_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>In the mid '90s, Tobias formed a folk music band with Lindsay and Maebe which he called Dr. Funke's 100 Percent Natural Good Time Family Band Solution. The group was underwritten by the Natural Food Life Company, a division of Chem-Grow.</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>Saw this on the highway and almost blue myself. Hop on?</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>t's one banana Michael, what could it cost, ten dollars? The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>I'll be in the hospital bar</p>
-							</div>
-						</div>
-					</div>
-					<div class="list-group-item">
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object img-circle" src="assets/images/avatars/lindsay_128.jpg" alt="..." width="32">
-							</a>
-							<div class="media-body">
-								<h5 class="media-heading">Firstname Lastname</h5>
-								<p>You know there isn't a hospital bar, Mother</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel-footer">
-					<div class="media">
-						<a class="pull-left" href="#">
-							<img class="media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
-						</a>
-						<div class="media-body">
-							<textarea class="form-control"></textarea>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end silo -->
 	</div>
+
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<link href="assets/icheck/square/red.css" rel="stylesheet">
+	<script src="assets/js/classie.js"></script>
+	<script src="assets/js/hammer.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<link href="assets/icheck/square/blue.css" rel="stylesheet">
 	<script src="assets/js/jquery.icheck.min.js"></script>
 	<script>
 	$(document).ready(function(){
-	  $('.panel-danger input[type=checkbox]').iCheck({
-	    checkboxClass: 'icheckbox_square-red',
-	    radioClass: 'iradio_square-red',
-	    increaseArea: '20%' // optional
-	  });
+		$('.panel-danger input[type=checkbox]').iCheck({
+			checkboxClass: 'icheckbox_square-red',
+			radioClass: 'iradio_square-red',
+			increaseArea: '20%' // optional
+		});
+		$('.panel-default input[type=checkbox]').iCheck({
+			checkboxClass: 'icheckbox_square-blue',
+			radioClass: 'iradio_square-blue',
+			increaseArea: '20%' // optional
+		});
 	});
 	</script>
 </body>
