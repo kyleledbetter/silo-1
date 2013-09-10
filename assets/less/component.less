@@ -5,7 +5,7 @@ html, body, .vs-container {
 }
 
 .no-touch .vs-container {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .vs-header {
@@ -83,12 +83,60 @@ html, body, .vs-container {
 .vs-triplelayout .vs-nav .vs-nav-current a img,
 .vs-container.vs-move-left .vs-nav-right a img,
 .vs-container.vs-move-right .vs-nav-left a img {
-	border: 3px solid @brand-success;
+	.box-shadow (0 0 10px @brand-success);
 }
+
+.vs-triplelayout {
+	.vs-nav-current {
+		a::before {
+			z-index: -1;
+			border-radius: 50%;
+			content: '';
+			opacity: 1;
+			position: absolute;
+			top: -16px;
+			left: -16px;
+			width: 80px;
+			height: 80px;
+			border: 2px solid @brand-success;
+
+			-webkit-animation: pulsate 3s ease-out;
+			-webkit-animation-iteration-count: infinite;
+			@-webkit-keyframes pulsate {
+				0% {-webkit-transform: scale(0.8); .opacity(0);}
+				50% {-webkit-transform: scale(1); .opacity(1);}
+				100% {-webkit-transform: scale(0.8); .opacity(0);}
+			}
+		}
+
+		a::after {
+			z-index: -1;
+			border-radius: 50%;
+			content: '';
+			opacity: 1;
+			position: absolute;
+			top: -11px;
+			left: -11px;
+			width: 70px;
+			height: 70px;
+			border: 6px solid @brand-success;
+
+			-webkit-animation: pulsate2 3s ease-out;
+			-webkit-animation-iteration-count: infinite;
+			@-webkit-keyframes pulsate2 {
+				0% {-webkit-transform: scale(0.2); .opacity(0);}
+				50% {-webkit-transform: scale(1); .opacity(1);}
+				100% {-webkit-transform: scale(0.2); .opacity(0);}
+			}
+		}
+	}
+}
+
+
 
 .vs-container.vs-move-left .vs-nav-current a,
 .vs-container.vs-move-right .vs-nav-current a {
-	
+
 }
 
 .vs-triplelayout .vs-nav .vs-nav-left,
@@ -138,7 +186,7 @@ html, body, .vs-container {
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
 	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);	
+	transform: translate3d(100%,0,0);
 }
 
 .vs-container.vs-move-left .vs-nav-left,
@@ -150,7 +198,8 @@ html, body, .vs-container {
 	position: relative;
 	display: block;
 	overflow: hidden;
-	min-height: 100%;
+	min-height: 90%;
+	height: 90%;
 	width: 100%;
 }
 
@@ -170,10 +219,10 @@ html, body, .vs-container {
 .vs-triplelayout .vs-wrapper > section {
 	position: absolute;
 	top: 0;
-	left: 10%;
+	left: 25%;
 	visibility: hidden;
-	padding: 0 0 100px;
-	width: 80%;
+	padding: 0;
+	width: 50%;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -191,24 +240,26 @@ html, body, .vs-container {
 }
 
 .vs-triplelayout .vs-wrapper .vs-left {
-	left: -70%; /* 80 - 10 */
+	left: -25%; /* 80 - 10 */
 }
 
 .vs-triplelayout .vs-wrapper .vs-left-outer {
-	left: -150%; /* - 70 - 80 */
+	left: -120%; /* - 70 - 80 */
 }
 
 .vs-triplelayout .vs-wrapper .vs-current {
 	position: relative;
 	z-index: 100;
+	min-height: 100%;
+	height: 100%;
 }
 
 .vs-triplelayout .vs-wrapper .vs-right {
-	left: 90%; /* 80 + 10 */
+	left: 75%; /* 80 + 10 */
 }
 
 .vs-triplelayout .vs-wrapper .vs-right-outer {
-	left: 170%; /* 90 + 80 */
+	left: 130%; /* 90 + 80 */
 }
 
 .vs-container.vs-move-left .vs-left,
@@ -235,9 +286,9 @@ html, body, .vs-container {
 	position: fixed;
 	top: 0;
 	z-index: 500;
-	width: 10%;
+	width: 25%;
 	height: 100%;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.1);
 	cursor: pointer;
 	-webkit-transition: background 0.3s;
 	transition: background 0.3s;
@@ -259,10 +310,11 @@ html, body, .vs-container {
 .vs-content {
 	position: relative;
 	margin: auto;
-	padding: 1em 0;
-	width: 95%;
+	padding: 0;
+	width: 100%;
 	text-align: left;
 	min-height: 100%;
+	height: 100%;
 }
 .vs-content .col {
 	margin: 0 auto;
@@ -292,14 +344,13 @@ html, body, .vs-container {
 	}
 
 	.vs-content {
-		width: 85%;
 	}
 
 	.vs-content h2 {
 	}
 
 	.vs-nav li a {
-		width: 160px;
+		width: auto;
 	}
 
 	.vs-content .col {
@@ -341,6 +392,29 @@ html, body, .vs-container {
 		-webkit-column-count: auto;
 		-moz-column-count: auto;
 		column-count: auto;
+	}
+	.vs-sidenav div {
+		width: 10%;
+	}
+	.vs-triplelayout {
+		.vs-wrapper {
+			& > section {
+				width: 80%;
+				left: 10%;
+			}
+			.vs-left {
+				left: -70%; /* 80 - 10 */
+			}
+			.vs-left-outer {
+				left: -150%; /* - 70 - 80 */
+			}
+			.vs-right {
+				left: 90%; /* 80 + 10 */
+			}
+			.vs-right-outer {
+				left: 170%; /* 90 + 80 */
+			}
+		}
 	}
 }
 

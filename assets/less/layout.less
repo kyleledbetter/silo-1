@@ -7,11 +7,31 @@
 
 	&> .panel-body,
 	&> .list-group {
-
+		overflow-x: hidden;
+		overflow-y: auto;
+		position: absolute;
+		top: 42px;
+		bottom: 155px;
+		z-index: 1;
 	}
 
 	&> .panel-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
 
+	&> .in,
+	&> .collapse,
+	&> .collapsing {
+		z-index: 2;
+		position: relative;
+		width: 100%;
+
+		&> .btn-group-vertical {
+			width: 100%;
+		}
 	}
 }
 .in {
@@ -33,6 +53,7 @@
 [class*="icheckbox"] {
 	float: left;
 	margin-right: 10px;
+
 }
 
 @media (min-width: @screen-tablet) {
