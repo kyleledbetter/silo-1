@@ -5950,6 +5950,19 @@ td.visible-print {
   left: 0;
   right: 0;
 }
+.panel > .panel-footer .nav-tabs {
+  margin-bottom: -2px;
+}
+.panel > .panel-footer .nav-tabs > li > a {
+  border-bottom: 0;
+}
+.panel > .panel-footer .tab-content {
+  min-height: 95px;
+}
+.panel > .panel-footer .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .panel > .in,
 .panel > .collapse,
 .panel > .collapsing {
