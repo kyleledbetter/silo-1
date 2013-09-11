@@ -2,6 +2,33 @@
 // Layout
 // --------------------------------------------------
 
+/* Text */
+.text-xs,
+.text-sm,
+.text-md,
+.text-lg {
+	text-rendering: optimizeLegibility;
+}
+.text-xs {
+	font-size: 50%;
+}
+.text-sm {
+	font-size: 70%;
+	font-weight: bold;
+}
+.text-md {
+	font-size: 80%;
+}
+.text-lg {
+	font-size: 110%;
+}
+.text-xl {
+	font-size: 120%;
+}
+.text-xxl {
+	font-size: 130%;
+}
+
 .panel {
 	min-height: 100%;
 
@@ -34,7 +61,8 @@
 		}
 	}
 }
-.in {
+.in,
+.collapsing {
 	&> .btn-group-vertical {
 		display: block;
 

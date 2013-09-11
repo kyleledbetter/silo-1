@@ -2,11 +2,12 @@
 // Wells
 // --------------------------------------------------
 
+@well-padding: 10px;
 
 // Base class
 .well {
   min-height: 20px;
-  padding: 9px;
+  padding: @well-padding;
   margin-bottom: 20px;
   background-color: @well-bg;
   border: 1px solid darken(@well-bg, 12%);
@@ -14,6 +15,12 @@
   blockquote {
     border-color: #ddd;
     border-color: rgba(0,0,0,.15);
+  }
+  .well-footer {
+    background-color: darken(@well-bg, 8%);
+    border-top: 1px solid darken(@well-bg, 12%);
+    padding: @well-padding;
+    margin: @well-padding -@well-padding -@well-padding -@well-padding;
   }
 }
 

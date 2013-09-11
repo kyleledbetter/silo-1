@@ -9,6 +9,18 @@ body {
 	background: #F5F5F5;
 }
 
+/* Text */
+.text-muted {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Label */
+.label {
+  border-radius: 20px;
+}
+
 /* Panel */
 .panel {
 	& > .in,
@@ -24,4 +36,30 @@ body {
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
+}
+
+/* Slide Menu */
+.slide-menu.in {
+  background-color: #F5F5F5;
+  .box-shadow (2px 0 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Navbar */
+.navbar {
+  .navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-left: 25px;
+    margin-left: 20px;
+    float: none;
+    display: inline-block;
+    background: url('../images/logo.png') no-repeat 0 50%;
+    background-size: 20px 20px;
+  }
+  & > ul > li > a {
+    line-height: 25px;
+  }
 }

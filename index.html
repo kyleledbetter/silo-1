@@ -8,6 +8,7 @@
 	<title>Silo Chat by Kyle Ledbetter</title>
 	<link href="assets/css/application.css" rel="stylesheet">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -22,6 +23,31 @@
 </head>
 <body>
 	<div id="vs-container" class="vs-container">
+		<nav class="navbar navbar-inverse text-center" role="navigation">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="24"> <span class="caret"></span></a>
+					<ul class="dropdown-menu text-left">
+						<li><a href="#">View Profile</a></li>
+						<li><a href="#">Edit Account</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sign Out</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-left">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-plus-sign"></span></a>
+					<ul class="dropdown-menu text-left">
+						<li><a href="#">New Chat</a></li>
+						<li><a href="#">Add Connection</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Invite Friends</a></li>
+					</ul>
+				</li>
+			</ul>
+			<a class="navbar-brand" href="#">silo</a>
+		</nav>
 		<header class="vs-header">
 			<ul class="vs-nav">
 				<li><a href="#section-1"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="64"></a></li>
@@ -44,16 +70,21 @@
 									<div class="btn-group">
 										<a data-toggle="collapse" href=".collapse-search-1" class="btn btn-xs btn-default"><span class="icon-search"></span></a>
 									</div>
+								</div>
+								<div class="btn-toolbar pull-left">
 									<div class="btn-group">
 										<a data-toggle="collapse" href=".collapse-menu-1" class="btn btn-xs btn-default"><span class="icon-reorder"></span></a>
 									</div>
 								</div>
-								<div class="btn-group pull-left">
-									<a data-toggle="collapse" href=".collapse-column-1" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
-									<a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
-									<a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+								<a data-toggle="collapse" href=".collapse-title-1">One</a>
+							</div>
+							<div class="collapse-title-1 collapse">
+								<div class="btn-group-vertical">
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-edit"></span> Rename Chat</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-share"></span> Share Chat</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-signout"></span> Leave Chat</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-remove-circle"></span> Delete Chat</a>
 								</div>
-								One
 							</div>
 							<div class="collapse-menu-1 collapse">
 								<div class="btn-group-vertical">
@@ -73,7 +104,7 @@
 							<div class="panel-body">
 								<div class="well">
 									<div class="media">
-										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-small pull-right">3 days ago</a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
 										</a>
@@ -85,7 +116,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -97,7 +128,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -116,7 +147,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -128,7 +159,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -140,7 +171,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -159,7 +190,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -171,7 +202,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -183,14 +214,17 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
-											<div class="text-danger text-center">
-												<div class="h5">
+											<div class="text-center">
+												<div class="h5 text-danger">
 												SEP
 												</div>
 												<div class="h6">
 												08
+												</div>
+												<div class="text-xs">
+												02:23 PM
 												</div>
 											</div>
 										</div>
@@ -202,7 +236,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -214,7 +248,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -226,13 +260,19 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-small pull-right">3 days ago</a>
+										<a href=".collapse-info-25" data-toggle="collapse" class="text-muted text-sm pull-right" title="Item info"><span class="icon-info-sign"></span></a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
 										</a>
 										<div class="media-body">
 											<h5 class="media-heading">Tobias Funke</h5>
 											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
+										</div>
+									</div>
+									<div class="collapse collapse-info-25 fade">
+										<div class="well-footer">
+											<a href="#" title="Filter by this tag" class="label label-success">Crazy talk</a>
 										</div>
 									</div>
 								</div>
@@ -292,7 +332,7 @@
 							<div class="panel-body">
 								<div class="well">
 									<div class="media">
-										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-small pull-right">3 days ago</a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -304,7 +344,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -316,7 +356,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -335,7 +375,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -347,7 +387,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -359,7 +399,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -378,7 +418,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -390,7 +430,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -402,7 +442,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -421,7 +461,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -433,7 +473,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -445,7 +485,7 @@
 								</div>
 								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -482,8 +522,16 @@
 					<!-- begin col -->
 						<div class="panel panel-default">
 							<div class="panel-heading text-center">
-								<div class="dropdown pull-right">
-									<a data-toggle="collapse" href=".collapse-menu-3"><span class="icon-reorder"></span></a>
+								<div class="btn-toolbar pull-right">
+									<div class="btn-group">
+										<a data-toggle="collapse" href=".collapse-users-3" class="btn btn-xs btn-default"><span class="icon-user"></span></a>
+									</div>
+									<div class="btn-group">
+										<a data-toggle="collapse" href=".collapse-search-3" class="btn btn-xs btn-default"><span class="icon-search"></span></a>
+									</div>
+									<div class="btn-group">
+										<a data-toggle="collapse" href=".collapse-menu-3" class="btn btn-xs btn-default"><span class="icon-reorder"></span></a>
+									</div>
 								</div>
 								<div class="btn-group pull-left">
 									<a data-toggle="collapse" href=".collapse-column-3" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
@@ -492,33 +540,37 @@
 								</div>
 								Three
 							</div>
-							<div class="collapse-menu-3 collapse fade">
+							<div class="collapse-menu-3 collapse">
 								<div class="btn-group-vertical">
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-link"></span> Links</a>
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
 								</div>
 							</div>
-							<div class="list-group">
-								<div class="list-group-item">
-									<input type="search" class="form-control" placeholder="search" />
-								</div>
-								<div class="list-group-item">
+							<div class="collapse-search-3 collapse">
+								<input type="search" class="form-control form-search" placeholder="search" />
+							</div>
+							<div class="collapse-users-3 collapse">
+								<input type="hidden" style="width: 100%" value="Micheal" placeholder="Add users to this chat" tabindex="-1" class="select-users">
+							</div>
+							<div class="panel-body">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
-											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
 										</a>
 										<div class="media-body">
-											<h5 class="media-heading">Firstname Lastname</h5>
-											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+											<h5 class="media-heading">Tobias Funke</h5>
+											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -528,9 +580,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -547,9 +599,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -559,9 +611,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -571,9 +623,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -587,6 +639,85 @@
 										<div class="media-body">
 											<h5 class="media-heading">Firstname Lastname</h5>
 											<div>This item is an event, and was created with the #event tag.</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" />
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is a task item created with #task</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<div class="text-danger text-center">
+												<div class="h5">
+												SEP
+												</div>
+												<div class="h6">
+												08
+												</div>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is an event, and was created with the #event tag.</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" />
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is a task item created with #task</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Tobias Funke</h5>
+											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
 										</div>
 									</div>
 								</div>
@@ -610,8 +741,16 @@
 					<!-- begin col -->
 						<div class="panel panel-default">
 							<div class="panel-heading text-center">
-								<div class="dropdown pull-right">
-									<a data-toggle="collapse" href=".collapse-menu-4"><span class="icon-reorder"></span></a>
+								<div class="btn-toolbar pull-right">
+									<div class="btn-group">
+										<a data-toggle="collapse" href=".collapse-users-4" class="btn btn-xs btn-default"><span class="icon-user"></span></a>
+									</div>
+									<div class="btn-group">
+										<a data-toggle="collapse" href=".collapse-search-4" class="btn btn-xs btn-default"><span class="icon-search"></span></a>
+									</div>
+									<div class="btn-group">
+										<a data-toggle="collapse" href=".collapse-menu-4" class="btn btn-xs btn-default"><span class="icon-reorder"></span></a>
+									</div>
 								</div>
 								<div class="btn-group pull-left">
 									<a data-toggle="collapse" href=".collapse-column-4" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
@@ -620,33 +759,37 @@
 								</div>
 								Four
 							</div>
-							<div class="collapse-menu-4 collapse fade">
+							<div class="collapse-menu-4 collapse">
 								<div class="btn-group-vertical">
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-file"></span> Files</a>
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-check"></span> Tasks</a>
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-calendar"></span> Events</a>
+									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-link"></span> Links</a>
 									<a href="#" class="btn btn-default"><span aria-hidden="true" class="icon-tag"></span> Tags</a>
 								</div>
 							</div>
-							<div class="list-group">
-								<div class="list-group-item">
-									<input type="search" class="form-control" placeholder="search" />
-								</div>
-								<div class="list-group-item">
+							<div class="collapse-search-4 collapse">
+								<input type="search" class="form-control form-search" placeholder="search" />
+							</div>
+							<div class="collapse-users-4 collapse">
+								<input type="hidden" style="width: 100%" value="Micheal" placeholder="Add users to this chat" tabindex="-1" class="select-users">
+							</div>
+							<div class="panel-body">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
-											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
 										</a>
 										<div class="media-body">
-											<h5 class="media-heading">Firstname Lastname</h5>
-											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+											<h5 class="media-heading">Tobias Funke</h5>
+											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -656,9 +799,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -675,9 +818,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -687,9 +830,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -699,9 +842,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<div class="text-danger text-center">
 												<div class="h5">
@@ -715,6 +858,85 @@
 										<div class="media-body">
 											<h5 class="media-heading">Firstname Lastname</h5>
 											<div>This item is an event, and was created with the #event tag.</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" />
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is a task item created with #task</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<div class="text-danger text-center">
+												<div class="h5">
+												SEP
+												</div>
+												<div class="h6">
+												08
+												</div>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is an event, and was created with the #event tag.</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" />
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is a task item created with #task</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Tobias Funke</h5>
+											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
 										</div>
 									</div>
 								</div>
@@ -771,25 +993,22 @@
 							<div class="collapse-users-5 collapse">
 								<input type="hidden" style="width: 100%" value="Micheal" placeholder="Add users to this chat" tabindex="-1" class="select-users">
 							</div>
-							<div class="list-group">
-								<div class="list-group-item">
-									<input type="search" class="form-control" placeholder="search" />
-								</div>
-								<div class="list-group-item">
+							<div class="panel-body">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
-											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
 										</a>
 										<div class="media-body">
-											<h5 class="media-heading">Firstname Lastname</h5>
-											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+											<h5 class="media-heading">Tobias Funke</h5>
+											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -799,15 +1018,15 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
-											<div class="btn btn-xs btn-danger active">
-												<div class="h6">
+											<div class="text-danger text-center">
+												<div class="h5">
 												SEP
 												</div>
-												<div class="btn btn-xs btn-default active">
+												<div class="h6">
 												08
 												</div>
 											</div>
@@ -818,9 +1037,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">3 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
 										<a class="pull-left" href="#">
 											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
 										</a>
@@ -830,9 +1049,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
 											<input type="checkbox" />
 										</div>
@@ -842,15 +1061,15 @@
 										</div>
 									</div>
 								</div>
-								<div class="list-group-item">
+								<div class="well">
 									<div class="media">
-										<a href="#" class="text-muted text-small pull-right">2 days ago</a>
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
 										<div class="pull-left">
-											<div class="btn btn-xs btn-danger active">
-												<div class="h6">
+											<div class="text-danger text-center">
+												<div class="h5">
 												SEP
 												</div>
-												<div class="btn btn-xs btn-default active">
+												<div class="h6">
 												08
 												</div>
 											</div>
@@ -858,6 +1077,85 @@
 										<div class="media-body">
 											<h5 class="media-heading">Firstname Lastname</h5>
 											<div>This item is an event, and was created with the #event tag.</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" />
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is a task item created with #task</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<div class="text-danger text-center">
+												<div class="h5">
+												SEP
+												</div>
+												<div class="h6">
+												08
+												</div>
+											</div>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is an event, and was created with the #event tag.</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>We need a name. Maybe 'Operation Hot Mother'. Of course. The "Bob Loblaw Law Blog." Wow. You, sir, are a mouthful! Daddy horny, Michael. [Stabbing Gob] White power! Gob: I'm white!</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href="#" class="text-muted text-sm pull-right">2 days ago</a>
+										<div class="pull-left">
+											<input type="checkbox" />
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading">Firstname Lastname</h5>
+											<div>This item is a task item created with #task</div>
+										</div>
+									</div>
+								</div>
+								<div class="well">
+									<div class="media">
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-sm pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="24">
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Tobias Funke</h5>
+											<div>Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</div>
 										</div>
 									</div>
 								</div>
@@ -896,7 +1194,7 @@
 				</div>
 				<div class="modal-body">
 					<h5 class="text-large">Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</h5>
-					<div class="text-muted">12:48 PM - 9/09/2013
+					<div class="text-muted">12:48 PM - 9/09/2013</div>
 				</div>
 			</div>
 		</div>
@@ -929,6 +1227,16 @@
 		$(window).load(function() {
 			$(".panel > .panel-body").animate({ scrollTop: $('.panel-body')[0].scrollHeight}, 1000);
 			$(".panel > .list-group").animate({ scrollTop: $('.list-group')[0].scrollHeight}, 1000);
+		});
+	</script>
+	<script>
+		// Sidebar Toggle
+		$(function(){
+			$(".toggle-menu").click(function(){
+			$('.menu').toggle();
+			$(".fixed-left").toggleClass("fixed-none");
+				return false;
+			});
 		});
 	</script>
 </body>
