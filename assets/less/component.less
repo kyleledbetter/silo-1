@@ -15,6 +15,9 @@ html, body, .vs-container {
 	width: 80%;
 	text-align: center;
 	-webkit-backface-visibility: hidden;
+	transform: scale(0, 0);
+	.opacity (0);
+	.transition (all 0.5s linear);
 }
 
 .vs-container > header h1 {
@@ -98,7 +101,7 @@ html, body, .vs-container {
 			left: -16px;
 			width: 80px;
 			height: 80px;
-			border: 2px solid @brand-success;
+			border: 1px solid @brand-success;
 
 			-webkit-animation: pulsate 3s ease-out;
 			-webkit-animation-iteration-count: infinite;
@@ -119,7 +122,7 @@ html, body, .vs-container {
 			left: -11px;
 			width: 70px;
 			height: 70px;
-			border: 6px solid @brand-success;
+			border: 3px solid @brand-success;
 
 			-webkit-animation: pulsate2 3s ease-out;
 			-webkit-animation-iteration-count: infinite;
@@ -198,9 +201,11 @@ html, body, .vs-container {
 	position: absolute;
 	display: block;
 	overflow: hidden;
-	top: 120px;
+	top: 37px;
 	bottom: 0;
 	width: 100%;
+	-webkit-transition: top 0.5s;
+	transition: top 0.5s;
 }
 
 .vs-wrapper > section {
@@ -224,6 +229,7 @@ html, body, .vs-container {
 	padding: 0;
 	width: 50%;
 	-webkit-backface-visibility: hidden;
+	.transition (width 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper > section:not(.vs-current) {
@@ -241,10 +247,12 @@ html, body, .vs-container {
 
 .vs-triplelayout .vs-wrapper .vs-left {
 	left: -25%; /* 80 - 10 */
+	.transition (left 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper .vs-left-outer {
 	left: -120%; /* - 70 - 80 */
+	.transition (left 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper .vs-current {
@@ -256,10 +264,12 @@ html, body, .vs-container {
 
 .vs-triplelayout .vs-wrapper .vs-right {
 	left: 75%; /* 80 + 10 */
+	.transition (left 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper .vs-right-outer {
 	left: 130%; /* 90 + 80 */
+	.transition (left 0.5s linear);
 }
 
 .vs-container.vs-move-left .vs-left,
@@ -290,8 +300,7 @@ html, body, .vs-container {
 	height: 100%;
 	background: rgba(0,0,0,0.1);
 	cursor: pointer;
-	-webkit-transition: background 0.3s;
-	transition: background 0.3s;
+	.transition (~"width 0.5s linear, background 0.5s linear");
 }
 
 .vs-sidenav div:hover {

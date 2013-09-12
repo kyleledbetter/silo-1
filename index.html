@@ -24,7 +24,7 @@
 <body>
 	<div id="vs-container" class="vs-container">
 		<nav class="navbar navbar-inverse text-center" role="navigation">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav pull-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="24"> <span class="caret"></span></a>
 					<ul class="dropdown-menu text-left">
@@ -35,12 +35,23 @@
 					</ul>
 				</li>
 			</ul>
-			<ul class="nav navbar-nav navbar-left">
+			<ul class="nav navbar-nav pull-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-plus-sign"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="label label-danger">5</span> <span class="caret"></span></a>
+					<ul class="dropdown-menu text-left">
+						<li><a href="#">View Profile</a></li>
+						<li><a href="#">Edit Account</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sign Out</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav pull-left">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">New <span class="icon-plus-sign"></span></a>
 					<ul class="dropdown-menu text-left">
 						<li><a href="#">New Chat</a></li>
-						<li><a href="#">Add Connection</a></li>
+						<li><a href="#">New Connection</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Invite Friends</a></li>
 					</ul>
@@ -219,6 +230,25 @@
 										</div>
 									</div>
 								</div>
+								<div class="well well-primary">
+									<div class="media">
+										<a href=".collapse-info-24" data-toggle="collapse" class="text-muted text-md pull-right" title="Item info"><span class="icon-info-sign"></span></a>
+										<a href=".modal-chat-1" data-toggle="modal" class="text-muted text-md pull-right">3 days ago</a>
+										<a class="pull-left" href="#">
+											<span aria-hidden="true" class="icon-picture text-30"></span>
+										</a>
+										<div class="media-body">
+											<h5 class="media-heading">Michael</h5>
+											<div>There's always money in the Banana Stand</div>
+											<div><a href="#"><img src="assets/images/uploads/banana-stand.jpg" width="100%"></a></div>
+										</div>
+									</div>
+									<div class="collapse collapse-info-24 fade">
+										<div class="well-footer">
+											<a href="#" title="Filter by this tag" class="label label-success">Banana Files</a>
+										</div>
+									</div>
+								</div>
 								<div class="well well-danger">
 									<div class="media">
 										<a href="#" class="text-muted text-md pull-right">2 days ago</a>
@@ -320,11 +350,11 @@
 									</a>
 									<div class="media-body">
 										<ul class="nav nav-tabs">
-											<li class="active"><a href="#tab-1" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span></a></li>
-											<li><a href="#tab-2" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span></a></li>
-											<li><a href="#tab-3" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span></a></li>
-											<li><a href="#tab-4" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span></a></li>
-											<li><a href="#tab-5" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span></a></li>
+											<li class="active"><a href="#tab-1" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span> <span class="hidden-tablet">Chat</span></a></li>
+											<li><a href="#tab-2" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span> <span class="hidden-tablet">File</span></a></li>
+											<li><a href="#tab-3" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span> <span class="hidden-tablet">Task</span></a></li>
+											<li><a href="#tab-4" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span> <span class="hidden-tablet">Event</span></a></li>
+											<li><a href="#tab-5" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span> <span class="hidden-tablet">Note</span></a></li>
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab-1">
@@ -637,11 +667,11 @@
 									</a>
 									<div class="media-body">
 										<ul class="nav nav-tabs">
-											<li class="active"><a href="#tab-21" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span></a></li>
-											<li><a href="#tab-22" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span></a></li>
-											<li><a href="#tab-23" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span></a></li>
-											<li><a href="#tab-24" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span></a></li>
-											<li><a href="#tab-25" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span></a></li>
+											<li class="active"><a href="#tab-21" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span> <span class="hidden-tablet">Chat</span></a></li>
+											<li><a href="#tab-22" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span> <span class="hidden-tablet">File</span></a></li>
+											<li><a href="#tab-23" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span> <span class="hidden-tablet">Task</span></a></li>
+											<li><a href="#tab-24" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span> <span class="hidden-tablet">Event</span></a></li>
+											<li><a href="#tab-25" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span> <span class="hidden-tablet">Note</span></a></li>
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab-21">
@@ -954,11 +984,11 @@
 									</a>
 									<div class="media-body">
 										<ul class="nav nav-tabs">
-											<li class="active"><a href="#tab-31" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span></a></li>
-											<li><a href="#tab-32" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span></a></li>
-											<li><a href="#tab-33" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span></a></li>
-											<li><a href="#tab-34" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span></a></li>
-											<li><a href="#tab-35" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span></a></li>
+											<li class="active"><a href="#tab-31" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span> <span class="hidden-tablet">Chat</span></a></li>
+											<li><a href="#tab-32" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span> <span class="hidden-tablet">File</span></a></li>
+											<li><a href="#tab-33" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span> <span class="hidden-tablet">Task</span></a></li>
+											<li><a href="#tab-34" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span> <span class="hidden-tablet">Event</span></a></li>
+											<li><a href="#tab-35" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span> <span class="hidden-tablet">Note</span></a></li>
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab-31">
@@ -1271,11 +1301,11 @@
 									</a>
 									<div class="media-body">
 										<ul class="nav nav-tabs">
-											<li class="active"><a href="#tab-41" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span></a></li>
-											<li><a href="#tab-42" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span></a></li>
-											<li><a href="#tab-43" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span></a></li>
-											<li><a href="#tab-44" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span></a></li>
-											<li><a href="#tab-45" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span></a></li>
+											<li class="active"><a href="#tab-41" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span> <span class="hidden-tablet">Chat</span></a></li>
+											<li><a href="#tab-42" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span> <span class="hidden-tablet">File</span></a></li>
+											<li><a href="#tab-43" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span> <span class="hidden-tablet">Task</span></a></li>
+											<li><a href="#tab-44" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span> <span class="hidden-tablet">Event</span></a></li>
+											<li><a href="#tab-45" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span> <span class="hidden-tablet">Note</span></a></li>
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab-41">
@@ -1588,11 +1618,11 @@
 									</a>
 									<div class="media-body">
 										<ul class="nav nav-tabs">
-											<li class="active"><a href="#tab-51" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span></a></li>
-											<li><a href="#tab-52" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span></a></li>
-											<li><a href="#tab-53" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span></a></li>
-											<li><a href="#tab-54" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span></a></li>
-											<li><a href="#tab-55" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span></a></li>
+											<li class="active"><a href="#tab-51" data-toggle="tab" class="tab-success"><span aria-hidden="true" class="icon-comment-alt"></span> <span class="hidden-tablet">Chat</span></a></li>
+											<li><a href="#tab-52" data-toggle="tab" class="tab-primary"><span aria-hidden="true" class="icon-upload-alt"></span> <span class="hidden-tablet">File</span></a></li>
+											<li><a href="#tab-53" data-toggle="tab" class="tab-info"><span aria-hidden="true" class="icon-check"></span> <span class="hidden-tablet">Task</span></a></li>
+											<li><a href="#tab-54" data-toggle="tab" class="tab-danger"><span aria-hidden="true" class="icon-calendar-empty"></span> <span class="hidden-tablet">Event</span></a></li>
+											<li><a href="#tab-55" data-toggle="tab" class="tab-warning"><span aria-hidden="true" class="icon-file-text-alt"></span> <span class="hidden-tablet">Note</span></a></li>
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab-51">
