@@ -98,9 +98,15 @@ body {
   .box-shadow (inset 2px 0 0 @brand-inverse);
 }
 
+/* Colored Backgrounds */
+.footer-primary {
+  background-color: lighten(@brand-primary, 10%);
+  border-top: 1px solid darken(@brand-primary, 10%);
+}
+
 /* Color Tabs */
 .nav-tabs {
-  border-bottom: 1px solid @nav-tabs-border-color;
+  border-bottom: 0;
   > li {
 
     > a.tab-primary {
@@ -213,10 +219,6 @@ body {
   & > .collapse,
   & > .collapsing {
     .box-shadow (0 2px 1px rgba(0, 0, 0, 0.2));
-  }
-  & > .panel-heading {
-    .box-shadow (0 2px 0 rgba(0, 0, 0, 0.1));
-    z-index: 1;
   }
 }
 

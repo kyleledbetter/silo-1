@@ -5944,7 +5944,7 @@ td.visible-print {
   overflow-y: auto;
   position: absolute;
   top: 42px;
-  bottom: 155px;
+  bottom: 144px;
   z-index: 1;
 }
 .panel > .panel-footer {
@@ -6105,9 +6105,14 @@ body {
   -webkit-box-shadow: inset 2px 0 0 #141c22;
   box-shadow: inset 2px 0 0 #141c22;
 }
+/* Colored Backgrounds */
+.footer-primary {
+  background-color: #4d6b82;
+  border-top: 1px solid #273742;
+}
 /* Color Tabs */
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 0;
 }
 .nav-tabs > li > a.tab-primary {
   color: #FFF;
@@ -6214,11 +6219,6 @@ body {
 .panel > .collapsing {
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-.panel > .panel-heading {
-  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
 /* Search */
 .form-search {
