@@ -15,6 +15,192 @@ body {
     text-decoration: none;
   }
 }
+.text-success-light {
+  color: @brand-success-light;
+}
+.text-success-dark {
+  color: @brand-success-dark;
+}
+.text-info-light {
+  color: @brand-info-light;
+}
+.text-info-dark {
+  color: @brand-info-dark;
+}
+.text-primary {
+  color: @brand-primary;
+}
+.text-primary-light {
+  color: @brand-primary-light;
+}
+.text-primary-dark {
+  color: @brand-primary-dark;
+}
+.text-warning-light {
+  color: @brand-warning-light;
+}
+.text-warning-dark {
+  color: @brand-warning-dark;
+}
+.text-danger-light {
+  color: @brand-danger-light;
+}
+.text-danger-dark {
+  color: @brand-danger-dark;
+}
+.text-inverse {
+  color: @brand-inverse;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-light;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-dark;
+}
+
+/* Colored Form */
+.form-control.control-success {
+  border: 1px solid @brand-success;
+}
+.form-control.control-primary {
+  border: 1px solid @brand-primary;
+}
+.form-control.control-info {
+  border: 1px solid @brand-info;
+}
+.form-control.control-warning {
+  border: 1px solid @brand-warning;
+}
+.form-control.control-danger {
+  border: 1px solid @brand-danger;
+}
+.form-control.control-inverse {
+  border: 1px solid @brand-inverse;
+}
+
+/* Color Wells */
+.well-success {
+  .box-shadow (inset 2px 0 0 @brand-success);
+}
+.well-primary {
+  .box-shadow (inset 2px 0 0 @brand-primary);
+}
+.well-info {
+  .box-shadow (inset 2px 0 0 @brand-info);
+}
+.well-warning {
+  .box-shadow (inset 2px 0 0 @brand-warning);
+}
+.well-danger {
+  .box-shadow (inset 2px 0 0 @brand-danger);
+}
+.well-inverse {
+  .box-shadow (inset 2px 0 0 @brand-inverse);
+}
+
+/* Color Tabs */
+.nav-tabs {
+  border-bottom: 1px solid @nav-tabs-border-color;
+  > li {
+
+    > a.tab-primary {
+      color: #FFF;
+      background-color: @brand-primary;
+      border: 1px solid transparent;
+      .opacity (0.25);
+      &:hover {
+        border-color: @brand-primary;
+      }
+    }
+    &.active > a.tab-primary {
+      &,
+      &:hover,
+      &:focus {
+        color: #FFF;
+        background-color: @brand-primary;
+        border: 1px solid @brand-primary;
+        .opacity (1);
+      }
+    }
+    > a.tab-success {
+      color: #FFF;
+      background-color: @brand-success;
+      border: 1px solid transparent;
+      .opacity (0.25);
+      &:hover {
+        border-color: @brand-success;
+      }
+    }
+    &.active > a.tab-success {
+      &,
+      &:hover,
+      &:focus {
+        color: #FFF;
+        background-color: @brand-success;
+        border: 1px solid @brand-success;
+        .opacity (1);
+      }
+    }
+    > a.tab-info {
+      color: #FFF;
+      background-color: @brand-info;
+      border: 1px solid transparent;
+      .opacity (0.25);
+      &:hover {
+        border-color: @brand-info;
+      }
+    }
+    &.active > a.tab-info {
+      &,
+      &:hover,
+      &:focus {
+        color: #FFF;
+        background-color: @brand-info;
+        border: 1px solid @brand-info;
+        .opacity (1);
+      }
+    }
+    > a.tab-warning {
+      color: #FFF;
+      background-color: @brand-warning;
+      border: 1px solid transparent;
+      .opacity (0.25);
+      &:hover {
+        border-color: @brand-warning;
+      }
+    }
+    &.active > a.tab-warning {
+      &,
+      &:hover,
+      &:focus {
+        color: #FFF;
+        background-color: @brand-warning;
+        border: 1px solid @brand-warning;
+        .opacity (1);
+      }
+    }
+    > a.tab-danger {
+      color: #FFF;
+      background-color: @brand-danger;
+      border: 1px solid transparent;
+      .opacity (0.25);
+      &:hover {
+        border-color: @brand-danger;
+      }
+    }
+    &.active > a.tab-danger {
+      &,
+      &:hover,
+      &:focus {
+        color: #FFF;
+        background-color: @brand-danger;
+        border: 1px solid @brand-danger;
+        .opacity (1);
+      }
+    }
+  }
+}
+
 
 /* Label */
 .label {
@@ -27,6 +213,10 @@ body {
   & > .collapse,
   & > .collapsing {
     .box-shadow (0 2px 1px rgba(0, 0, 0, 0.2));
+  }
+  & > .panel-heading {
+    .box-shadow (0 2px 0 rgba(0, 0, 0, 0.1));
+    z-index: 1;
   }
 }
 
@@ -61,5 +251,13 @@ body {
   }
   & > ul > li > a {
     line-height: 25px;
+  }
+}
+
+/* Media Body */
+.media-body {
+  & > div,
+  & > p {
+    color: darken(@gray-light, 5%);
   }
 }

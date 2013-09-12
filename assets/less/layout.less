@@ -28,6 +28,9 @@
 .text-xxl {
 	font-size: 130%;
 }
+.text-30 {
+	font-size: 30px;
+}
 
 .panel {
 	min-height: 100%;
@@ -49,17 +52,24 @@
 		right: 0;
 
 		.nav-tabs {
-			margin-bottom: -2px;
+			margin-bottom: -1px;
+
+			> li {
+				margin-right: 5px;
+			}
 
 			& > li > a {
 				border-bottom: 0;
+				padding-top: 4px;
+				padding-bottom: 4px;
 			}
 		}
 		.tab-content {
-			min-height: 95px;
+			min-height: 94px;
 		}
 		.form-control {
 			.box-shadow (none);
+			border-top-left-radius: 0;
 		}
 	}
 
