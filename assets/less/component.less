@@ -229,7 +229,6 @@ html, body, .vs-container {
 	padding: 0;
 	width: 50%;
 	-webkit-backface-visibility: hidden;
-	.transition (width 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper > section:not(.vs-current) {
@@ -247,12 +246,10 @@ html, body, .vs-container {
 
 .vs-triplelayout .vs-wrapper .vs-left {
 	left: -25%; /* 80 - 10 */
-	.transition (left 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper .vs-left-outer {
 	left: -120%; /* - 70 - 80 */
-	.transition (left 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper .vs-current {
@@ -264,12 +261,10 @@ html, body, .vs-container {
 
 .vs-triplelayout .vs-wrapper .vs-right {
 	left: 75%; /* 80 + 10 */
-	.transition (left 0.5s linear);
 }
 
 .vs-triplelayout .vs-wrapper .vs-right-outer {
 	left: 130%; /* 90 + 80 */
-	.transition (left 0.5s linear);
 }
 
 .vs-container.vs-move-left .vs-left,
@@ -300,7 +295,7 @@ html, body, .vs-container {
 	height: 100%;
 	background: rgba(0,0,0,0.1);
 	cursor: pointer;
-	.transition (~"width 0.5s linear, background 0.5s linear");
+	.transition (background 0.5s linear);
 }
 
 .vs-sidenav div:hover {

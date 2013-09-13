@@ -6137,8 +6137,6 @@ body,
   padding: 0;
   width: 50%;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: width 0.5s linear;
-  transition: width 0.5s linear;
 }
 .vs-triplelayout .vs-wrapper > section:not(.vs-current) {
   overflow: hidden;
@@ -6155,15 +6153,11 @@ body,
   left: -25%;
   /* 80 - 10 */
 
-  -webkit-transition: left 0.5s linear;
-  transition: left 0.5s linear;
 }
 .vs-triplelayout .vs-wrapper .vs-left-outer {
   left: -120%;
   /* - 70 - 80 */
 
-  -webkit-transition: left 0.5s linear;
-  transition: left 0.5s linear;
 }
 .vs-triplelayout .vs-wrapper .vs-current {
   position: relative;
@@ -6175,15 +6169,11 @@ body,
   left: 75%;
   /* 80 + 10 */
 
-  -webkit-transition: left 0.5s linear;
-  transition: left 0.5s linear;
 }
 .vs-triplelayout .vs-wrapper .vs-right-outer {
   left: 130%;
   /* 90 + 80 */
 
-  -webkit-transition: left 0.5s linear;
-  transition: left 0.5s linear;
 }
 .vs-container.vs-move-left .vs-left,
 .vs-container.vs-move-left .vs-current,
@@ -6211,8 +6201,8 @@ body,
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  -webkit-transition: width 0.5s linear, background 0.5s linear;
-  transition: width 0.5s linear, background 0.5s linear;
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .vs-sidenav div:hover {
   background: rgba(0, 0, 0, 0.2);
