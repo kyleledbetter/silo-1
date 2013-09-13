@@ -22,19 +22,8 @@
 	<script src="assets/js/modernizr.custom.js"></script>
 </head>
 <body>
-	<div id="vs-container" class="vs-container">
+	<div id="vs-container" class="vs-container slide">
 		<nav class="navbar navbar-inverse text-center" role="navigation">
-			<ul class="nav navbar-nav pull-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="24"> <span class="caret"></span></a>
-					<ul class="dropdown-menu text-left">
-						<li><a href="#">View Profile</a></li>
-						<li><a href="#">Edit Account</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Sign Out</a></li>
-					</ul>
-				</li>
-			</ul>
 			<ul class="nav navbar-nav pull-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="label label-danger">5</span> <span class="caret"></span></a>
@@ -48,8 +37,20 @@
 						<li><a href="#" class="text-center"><span aria-hidden="true" class="icon-ok"></span> Mark all as read</a></li>
 					</ul>
 				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="24"> <span class="caret"></span></a>
+					<ul class="dropdown-menu text-left">
+						<li><a href="#">View Profile</a></li>
+						<li><a href="#">Edit Account</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sign Out</a></li>
+					</ul>
+				</li>
 			</ul>
 			<ul class="nav navbar-nav pull-left">
+				<li>
+					<a href="#" class="sidebar-toggle"><span class="icon-reorder"></span></a>
+				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">New <span class="icon-plus-sign"></span></a>
 					<ul class="dropdown-menu text-left">
@@ -1697,7 +1698,19 @@
 			</section>
 		</div>
 	</div>
-
+	<!-- begin sidebar -->
+	<div class="sidebar">
+		<h3 class="brand-sidebar">silo</h3>
+		<ul class="nav nav-stacked">
+			<li class="nav-heading">Chats</li>
+			<li><a href="#section-1"><img class="img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="16"> Banana Stand</a></li>
+			<li><a href="#section-2"><img class="img-circle" src="assets/images/avatars/george_128.jpg" alt="..." width="16"> No Touching</a></li>
+			<li><a href="#section-3"><img class="img-circle" src="assets/images/avatars/gob_128.jpg" alt="..." width="16"> Roofie Circle</a></li>
+			<li><a href="#section-4"><img class="img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="16"> Anustart</a></li>
+			<li><a href="#section-5"><img class="img-circle" src="assets/images/avatars/barry_128.jpg" alt="..." width="16">Take To The Sea!</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
 	<!-- begin modal -->
 	<div class="modal fade modal-chat-1">
 		<div class="modal-dialog">
@@ -1753,11 +1766,7 @@
 	<script>
 		// Sidebar Toggle
 		$(function(){
-			$(".toggle-menu").click(function(){
-			$('.menu').toggle();
-			$(".fixed-left").toggleClass("fixed-none");
-				return false;
-			});
+		    $('.sidebar-toggle').click(function(){$('#vs-container').toggleClass('active');});
 		});
 	</script>
 </body>

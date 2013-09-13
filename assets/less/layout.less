@@ -100,6 +100,33 @@
 	}
 }
 
+/* Sidebar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 90%;
+	bottom: 0;
+
+	.nav-heading {
+		text-transform: uppercase;
+		padding: 5px 16px 0 16px;
+	}
+}
+
+/* Slide */
+.slide {
+    .transition (all .2s linear);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 1;
+}
+
+.slide.active{
+    -webkit-transform: translate3d(85%,0,0);
+    transform: translate3d(85%,0,0);
+}
+
 /* iCheck */
 [class*="icheckbox"] {
 	float: left;
