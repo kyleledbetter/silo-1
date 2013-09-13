@@ -98,9 +98,24 @@ body {
   .box-shadow (inset 2px 0 0 @brand-inverse);
 }
 
+/* Buttons */
+.btn-none {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    background: transparent;
+  }
+  &:hover {
+    color: lighten(@btn-default-color, 20%);
+  }
+}
+
 /* Colored Backgrounds */
 .footer-primary {
   background-color: lighten(@brand-primary, 10%);
+  border-top: 1px solid darken(@brand-primary, 10%);
 }
 
 /* Color Tabs */
@@ -220,13 +235,6 @@ body {
     .box-shadow (0 2px 1px rgba(0, 0, 0, 0.2));
   }
 
-  & > .panel-heading {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  }
-
-  & > .panel-footer {
-    border-top: 2px solid rgba(0, 0, 0, 0.2);
-  }
 }
 
 /* Search */

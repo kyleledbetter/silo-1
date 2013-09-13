@@ -7153,9 +7153,21 @@ body {
   -webkit-box-shadow: inset 2px 0 0 #141c22;
   box-shadow: inset 2px 0 0 #141c22;
 }
+/* Buttons */
+.btn-none,
+.btn-none:hover,
+.btn-none:focus,
+.btn-none:active {
+  border: 0;
+  background: transparent;
+}
+.btn-none:hover {
+  color: #666666;
+}
 /* Colored Backgrounds */
 .footer-primary {
   background-color: #4d6b82;
+  border-top: 1px solid #273742;
 }
 /* Color Tabs */
 .nav-tabs {
@@ -7266,12 +7278,6 @@ body {
 .panel > .collapsing {
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-.panel > .panel-heading {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-}
-.panel > .panel-footer {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 /* Search */
 .form-search {
