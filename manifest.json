@@ -1,0 +1,11 @@
+{
+  "name": "Silo",
+  "description": "Multi-column chat and tasks",
+  "version": "0.1",
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "silo-16.png", "128": "silo-128.png" }
+}
