@@ -39,6 +39,7 @@
 	&> .list-group {
 		overflow-x: hidden;
 		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 		position: absolute;
 		top: 42px;
 		bottom: 156px;
@@ -116,10 +117,14 @@
 	left: 0;
 	width: 90%;
 	bottom: 0;
-	z-index: -1;
+	z-index: 0;
 
 	.navbar {
 		margin-bottom: 10px;
+
+		.navbar-brand {
+			margin-left: 24px;
+		}
 	}
 }
 
@@ -148,19 +153,27 @@
 		top: 120px;
 	}
 }
-@media (max-width: @screen-phone) {
+@media (min-width: @screen-desktop) {
 	.slide.active{
-	    -webkit-transform: translate3d(85%,0,0);
-	    transform: translate3d(85%,0,0);
+	    -webkit-transform: translate3d(35%,0,0);
+	    transform: translate3d(35%,0,0);
+	}
+}
+@media (max-width: @screen-desktop) {
+	.hidden-tablet {
+		display: none;
+	}
+}
+@media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+	.slide.active{
+	    -webkit-transform: translate3d(55%,0,0);
+	    transform: translate3d(55%,0,0);
 	}
 }
 @media (max-width: @screen-tablet) {
 	.navbar {
 		.nav {
 			margin: 0;
-		}
-		.navbar-brand {
-			margin-left: 10%;
 		}
 	}
 	.navbar-nav {
@@ -174,25 +187,56 @@
 		}
 	}
 }
+@media (min-width: @screen-phone) and (max-width: @screen-tablet) {
+	.navbar .navbar-brand {
+		margin-left: 10%;
+	}
+}
+@media (max-width: @screen-phone) {
+	.slide.active{
+	    -webkit-transform: translate3d(85%,0,0);
+	    transform: translate3d(85%,0,0);
+	}
+	.navbar .navbar-brand {
+		margin-left: 5%;
+	}
+	.panel {
+		& > .panel-body,
+		& > .list-group {
+			bottom: 38px;
+		}
+		& > .panel-footer {
+			padding: 3px 3px 3px 5px;
 
-@media (max-width: @screen-desktop) {
-	.hidden-tablet {
+			.nav-tabs {
+				display: none;
+			}
+			.nav-tabs > li {
+				margin-bottom: 2px;
+			}
+
+			.nav-tabs > li > a {
+				padding: 2px;
+				background-color: transparent !important;
+				border: 0 !important;
+			}
+			.tab-content {
+				min-height: 0;
+
+				button {
+					right: 6px;
+					bottom: 6px;
+				}
+			}
+			textarea {
+				max-height: 30px;
+			}
+		}
+	}
+	.hidden-phone {
 		display: none;
 	}
 }
-@media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
-	.slide.active{
-	    -webkit-transform: translate3d(55%,0,0);
-	    transform: translate3d(55%,0,0);
-	}
-}
-@media (min-width: @screen-desktop) {
-	.slide.active{
-	    -webkit-transform: translate3d(35%,0,0);
-	    transform: translate3d(35%,0,0);
-	}
-}
-
 @media (min-width: @screen-lg-desktop) {
 
 }
